@@ -26,8 +26,8 @@ def main():
     sendMail(html)
 
 if __name__ == "__main__":
-    schedule.every().day.at("09:00").do(main)
     print("⏳ 스케줄러가 실행 중입니다... 매일 09:00에 뉴스 요약 메일이 전송됩니다.")
+    schedule.every().day.at("09:00").do(main)
     while True:
         schedule.run_pending()
         time.sleep(60)
