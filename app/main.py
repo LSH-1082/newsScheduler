@@ -11,7 +11,6 @@ naverCategory = {
 }
 
 worldCategory = {
-    "🤖 인공지능" : "artificail intelligence",
     "🛠️ 소프트웨어 개발" : "software development",
     "🔐 소프트웨어 보안" : "software security"
 }
