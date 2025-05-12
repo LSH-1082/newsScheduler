@@ -1,4 +1,4 @@
-FROM python:3.10-slim
+FROM python:3.9.6-slim
 
 ENV TZ=Asia/Seoul
 
@@ -13,4 +13,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY app/ .
 
-CMD ["python", "main.py"]
+ENV PYTHONUNBUFFERED=1
+
+CMD ["python", "-u", "main.py"]
